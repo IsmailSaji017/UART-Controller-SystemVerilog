@@ -1,0 +1,549 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Jun 10 21:21:30 2026
+# Process ID         : 15316
+# Current directory  : D:/Users/Dell/UART _controller/UART _controller.runs/impl_1
+# Command line       : vivado.exe -log uart_tb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_tb.tcl -notrace
+# Log file           : D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/uart_tb.vdi
+# Journal file       : D:/Users/Dell/UART _controller/UART _controller.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-7FN73CL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
+# CPU Frequency      : 1896 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8395 MB
+# Swap memory        : 8918 MB
+# Total Virtual      : 17313 MB
+# Available Virtual  : 2652 MB
+#-----------------------------------------------------------
+source uart_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 567.340 ; gain = 230.402
+Command: link_design -top uart_tb -part xcve2002-sbva484-1LHP-i-L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcve2002-sbva484-1LHP-i-L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 838.480 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado1/2025.2/Vivado/data/ip'.
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Constraints 18-6358] GCLK_DESKEW_DEFAULT not specified in Clock Expansion Window constraints config file for device xcve2002.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading NOC Solution File 'D:/Users/Dell/UART _controller/UART _controller.runs/synth_1/uart_tb/uart_tb.ncr'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1144.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1144.156 ; gain = 576.816
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcve2002'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1149.617 ; gain = 5.461
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1601.895 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1601.895 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1601.895 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1601.910 ; gain = 0.016
+
+Phase 2.2 Timer Update
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.2 Timer Update | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Retarget | Checksum: 1c6624ed5
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Constant propagation | Checksum: 1c6624ed5
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2257.941 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Sweep | Checksum: 1c6624ed5
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+BUFG optimization | Checksum: 1c6624ed5
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Shift Register Optimization | Checksum: 1c6624ed5
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Post Processing Netlist | Checksum: 1c6624ed5
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2257.941 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Phase 9 Finalization | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1c6624ed5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.941 ; gain = 656.047
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2257.941 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+31 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2257.941 ; gain = 1113.785
+INFO: [Vivado 12-24828] Executing command : report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx
+Command: report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/opt_report_drc_0.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2257.941 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2257.941 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/uart_tb_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-1073] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+CRITICAL WARNING: [DRC CIPS-1] Versal CIPS exists check - place design: Versal designs must contain a CIPS IP in the netlist hierarchy to function properly. Please create an instance of the CIPS IP and configure it. Without a CIPS IP in the design, Vivado will not generate a CDO for the PMC, an elf for the PLM.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Critical Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+INFO: [Place 46-575] Running place_design with the Advanced Flow feature set.
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Mandatory Logic Optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2257.941 ; gain = 0.000
+Phase 1.1 Mandatory Logic Optimization | Checksum: 1cc547c87
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 99e08a16 Context: ecbb4b55 
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2257.941 ; gain = 0.000
+
+Phase 1.2 Add Constraints
+
+Phase 1.2.1 Add User PBlocks
+Phase 1.2.1 Add User PBlocks | Checksum: 1cc547c87
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 99e08a16 Context: ecbb4b55 
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2257.941 ; gain = 0.000
+Phase 1.2 Add Constraints | Checksum: 1cc547c87
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 99e08a16 Context: ecbb4b55 
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2257.941 ; gain = 0.000
+
+Phase 1.3 Build Placer Infrastructure/IO Clock Placement
+
+Phase 1.3.1 Build Netlist
+Phase 1.3.1 Build Netlist | Checksum: 14b520ded
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: ac239a2c Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 1.3.2 Build PBlock Handler
+Phase 1.3.2 Build PBlock Handler | Checksum: 188e3f311
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: e9b57f50 Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 1.3.3 Commit IO Placement
+Phase 1.3.3 Commit IO Placement | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.605 ; gain = 35.664
+Phase 1.3 Build Placer Infrastructure/IO Clock Placement | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.605 ; gain = 35.664
+Phase 1 Placer Initialization | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 2 Clock Region Placement
+Phase 2 Clock Region Placement | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 3 Commit Global Clocks
+Phase 3 Commit Global Clocks | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 4 Deposit Clock Trees to RouteDB
+Phase 4 Deposit Clock Trees to RouteDB | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+
+Phase 5 Placer Reporting
+INFO: [Implflow 47-2776] Post-Placement Estimated Congestion
+Phase 5 Placer Reporting | Checksum: 10f9ef59d
+----- Checksum: PlaceDB: 45b8a71c ShapeSum: 00000000 Design: 707081dc Context: 5975cca5 
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+Ending Placer Task | Checksum: 13c1da847
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2293.605 ; gain = 35.664
+49 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2293.605 ; gain = 35.664
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file place_report_utilization_0.rpt -pb place_report_utilization_0.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file place_report_control_sets_0.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file place_report_io_0.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.198 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Vivado 12-25873] NoC Quality of service specification will not be written as the design does not use the NoC.
+INFO: [Vivado 12-25874] NoC solution will not be written as the design does not use the NoC.
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/uart_tb_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcve2002'
+WARNING: [Vivado_Tcl 4-285] Placement is not in timing driven mode. Phys_opt_design will not run
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/uart_tb_physopt.dcp' has been generated.
+Command: route_design
+INFO: [Vivado_Tcl 4-2300] Running route_design with the Advanced Flow feature set.
+Attempting to get a license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcve2002'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+DB_checksum | Checksum: 13c1da847
+----- Checksum: PlaceDB: 45b8a71c ConstDB: 00000000 ShapeSum: 00000000 RouteDB: f665012b 
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.923 . Memory (MB): peak = 2293.605 ; gain = 0.000
+Post Restoration Checksum: NetGraph: c2a8fa9d | NumContArr: f4ac3626 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+INFO: [Route 35-556] 0 Nets skipped to route as DONT_ROUTE property is set on them
+Phase 2.2 Pre Route Cleanup | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 2.3 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 2.3 Route finalize | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 2.4 Verifying routed nets
+
+ Verification completed successfully
+Phase 2.4 Verifying routed nets | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 2.5 Depositing Routes
+Phase 2.5 Depositing Routes | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 3 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 3 Route finalize | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 4 Verifying routed nets
+
+ Verification completed successfully
+Phase 4 Verifying routed nets | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 5 Depositing Routes
+Phase 5 Depositing Routes | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Phase 6 Post Process Routing
+Phase 6 Post Process Routing | Checksum: 33ca725fd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+Skip PhysOpt in Router because non-negative WNS value: 3.40282e+38 .
+Total Elapsed time in route_design: 3.274 secs
+
+Phase 7 Post-Route Event Processing
+Phase 7 Post-Route Event Processing | Checksum: 13c1da847
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 13c1da847
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.605 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+Command: report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/route_report_drc_0.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file route_report_methodology_0.rpt -pb route_report_methodology_0.pb -rpx route_report_methodology_0.rpx
+Command: report_methodology -file route_report_methodology_0.rpt -pb route_report_methodology_0.pb -rpx route_report_methodology_0.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/route_report_methodology_0.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file route_report_timing_summary_0.rpt -pb route_report_timing_summary_0.pb -rpx route_report_timing_summary_0.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1LHP, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file route_report_route_status_0.rpt -pb route_report_route_status_0.pb
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file route_report_incremental_reuse_0.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+Command: report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Designutils 20-5774] No environmental constraints detected, worst case junction temperature (Tj) will be used, this will not impact the dynamic power estimate but will impact the static power shown.
+To more accurately reflect the environmental and thermal operating condition of the application the following constraints should be applied, to reflect the applications specifications:
+   set_operating_conditions -ambient_temp 25
+   set_operating_conditions -thetaja 1.0
+
+Where Ambient Temperature is defined as degrees Celsius and Theta Ja is the effectiveness of the thermal solution described as C/W to represent the rise in junction temperature for every watt dissipated
+To set the junction temperature to a specific value the following constraint should be used:
+   set_operating_conditions -junction_temp 25
+
+For the Versal architecture, a default junction temperature of 100C is assumed when no environmental conditions are set (Ta/Tj/TJA).
+83 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file route_report_clock_utilization_0.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -pb route_report_bus_skew_0.pb -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1LHP, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2293.605 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Dell/UART _controller/UART _controller.runs/impl_1/uart_tb_routed.dcp' has been generated.
+Command: write_device_image -force uart_tb.pdi
+Attempting to get a license for feature 'Implementation' and/or device 'xcve2002'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcve2002'
+Running DRC as a precondition to command write_device_image
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-1073] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+ERROR: [DRC CIPS-2] Versal CIPS exists check - wdi: Versal designs must contain a CIPS IP in the netlist hierarchy to function properly. Please create an instance of the CIPS IP and configure it. Without a CIPS IP in the design, Vivado will not generate a CDO for the PMC, an elf for the PLM.
+INFO: [Vivado 12-3199] DRC finished with 1 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 3 Warnings, 1 Critical Warnings and 2 Errors encountered.
+write_device_image failed
+write_device_image: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2293.605 ; gain = 0.000
+ERROR: [Common 17-39] 'write_device_image' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 10 21:23:29 2026...

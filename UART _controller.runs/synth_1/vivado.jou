@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Jun 10 21:20:10 2026
+# Process ID         : 440
+# Current directory  : D:/Users/Dell/UART _controller/UART _controller.runs/synth_1
+# Command line       : vivado.exe -log uart_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_tb.tcl
+# Log file           : D:/Users/Dell/UART _controller/UART _controller.runs/synth_1/uart_tb.vds
+# Journal file       : D:/Users/Dell/UART _controller/UART _controller.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-7FN73CL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
+# CPU Frequency      : 1896 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8395 MB
+# Swap memory        : 7838 MB
+# Total Virtual      : 16233 MB
+# Available Virtual  : 1497 MB
+#-----------------------------------------------------------
+source uart_tb.tcl -notrace
+validate_noc  -part xcve2002-sbva484-1LHP-i-L -no_compile 
